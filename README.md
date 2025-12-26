@@ -1,3 +1,4 @@
+<img width="1899" height="993" alt="image" src="https://github.com/user-attachments/assets/475e7c33-b85a-4f87-ad00-cf0dc31fc22d" />
 
 # K-Means Image Segmentation (Streamlit + scikit-learn)
 
