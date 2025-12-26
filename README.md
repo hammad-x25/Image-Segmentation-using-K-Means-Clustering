@@ -1,24 +1,24 @@
-```md
+
 # K-Means Image Segmentation (Streamlit + scikit-learn)
 
-A beginner-friendly web app that performs **image segmentation using K-Means clustering**.  
+A beginner-friendly web app that performs image segmentation using K-Means clustering
 Upload an image, choose the number of segments (**K**), and the app will generate a segmented version of the image.  
-It also shows a **color palette** (cluster centers) and compares **file sizes** (original vs segmented) in **PNG/JPG/WEBP**, including the **reduction amount and percentage**.
+It also shows a color palette (cluster centers) and compares file sizes (original vs segmented) in PNG/JPG/WEBP, including the reduction amount and percentage.
 
 ---
 
 ## Features
 
-- ✅ Upload images: **JPG / PNG / WEBP**
-- ✅ K-Means segmentation using **scikit-learn**
-- ✅ Adjustable **K (number of segments)**
-- ✅ Optional **blur** to reduce noise
+- ✅ Upload images: JPG / PNG / WEBP
+- ✅ K-Means segmentation using scikit-learn
+- ✅ Adjustable K (number of segments)
+- ✅ Optional blur to reduce noise
 - ✅ Optional resize for faster processing
-- ✅ Shows **dominant cluster colors** as a palette
-- ✅ Shows **approx file size** for:
+- ✅ Shows dominant cluster colors as a palette
+- ✅ Shows approx file size for:
   - PNG (lossless)
   - JPG (lossy, with quality)
-- ✅ Displays **size reduction (KB + %)** after segmentation
+- ✅ Displays size reduction (KB + %) after segmentation
 - ✅ Download segmented image (PNG)
 
 ---
@@ -26,8 +26,8 @@ It also shows a **color palette** (cluster centers) and compares **file sizes** 
 ## How it Works (Simple)
 
 1. The image is converted into a list of pixels: each pixel is `[R, G, B]`
-2. K-Means groups pixels into **K clusters**
-3. Each pixel is replaced by its cluster’s **center color**
+2. K-Means groups pixels into K clusters
+3. Each pixel is replaced by its cluster’s center color
 4. The app displays:
    - Original image
    - Segmented image
@@ -38,7 +38,7 @@ It also shows a **color palette** (cluster centers) and compares **file sizes** 
 
 ## Requirements
 
-- Python **3.9+** recommended  
+- Python 3.9+ recommended  
 - Libraries:
   - streamlit
   - opencv-python
@@ -98,11 +98,11 @@ Streamlit will open the app in your browser.
 
 ## Notes About File Size
 
-* PNG is **lossless** → size may be larger
-* JPG/WEBP are **lossy** → size depends on quality setting
+* PNG is lossless → size may be larger
+* JPG/WEBP are lossy → size depends on quality setting
 * Segmentation often reduces size because it reduces color complexity (better compression)
 
-The displayed size is an **approximation** based on encoding the image in memory using OpenCV.
+The displayed size is an approximation based on encoding the image in memory using OpenCV.
 
 ---
 
@@ -127,10 +127,10 @@ model = KMeans(
 
 ## Tech Stack
 
-* **Streamlit** (UI)
-* **OpenCV** (image decoding/encoding)
-* **NumPy** (array operations)
-* **scikit-learn** (KMeans clustering)
+* Streamlit (UI)
+* OpenCV (image decoding/encoding)
+* NumPy (array operations)
+* scikit-learn (KMeans clustering)
 
 ---
 
@@ -151,7 +151,5 @@ MIT (you can change this if you want)
 
 ## Author
 
-Built by ** Hammad-x25 **
+Built by  Hammad-x25 
 
-```
-```
